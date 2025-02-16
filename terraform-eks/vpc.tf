@@ -16,4 +16,5 @@ module "vpc" {
 
   tags = {
     ENVIRONMENT = var.environment
+  }
 }
