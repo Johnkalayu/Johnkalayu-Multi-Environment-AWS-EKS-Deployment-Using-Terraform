@@ -1,7 +1,7 @@
 variable "eks_cluster_name" {
     description = "EKS cluster name"
     type        = string
-    default   = "eks-cluster_dev"
+    default   = "eks-cluster"
 }
 variable "eks_cluster_version" {
     description = "EKS cluster version"
@@ -48,7 +48,7 @@ variable "addons" {
         {
             name    = "coredns"
             version = "v1.9.3-eksbuild.1"
-        }
+        },
         {
             name = "aws-ebs-csi-driver"
             version = "v1.23.0-eksbuild.1"
@@ -73,7 +73,7 @@ variable "vpc_cidr" {
 variable "public_subnet_name" {
     description = "public subnet name"
     type        = list(string)
-    default     = ["public-subnet-1", "public-subnet-2", "public-subnet-3"]
+    default     = ["public_subnet_1", "public_subnet_2", "public_subnet_3"]
 }
 variable "public_subnet_cidr" {
     description = "Public subnet CIDR"
