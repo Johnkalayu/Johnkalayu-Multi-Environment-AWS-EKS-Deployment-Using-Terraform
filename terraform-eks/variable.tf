@@ -63,7 +63,8 @@ variable "addons" {
     description = "VPC name"
     type        = string
     default     = "eks-vpc"
- }
+}
+
 
 variable "vpc_cidr" {
      description = "VPC CIDR"

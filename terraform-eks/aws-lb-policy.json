@@ -1,0 +1,26 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Action": [
+          "elasticloadbalancing:*",
+          "ec2:DescribeInstances",
+          "ec2:DescribeSecurityGroups",
+          "ec2:DescribeSubnets",
+          "ec2:DescribeVpcs",
+          "ec2:ModifyInstanceAttribute",
+          "ec2:AssignPrivateIpAddresses",
+          "ec2:UnassignPrivateIpAddresses",
+          "iam:ListServerCertificates",
+          "iam:GetServerCertificate",
+          "acm:DescribeCertificate",
+          "acm:GetCertificate",
+          "route53:ListResourceRecordSets",
+          "route53:ChangeResourceRecordSets"
+        ],
+        "Resource": "*"
+      }
+    ]
+  }
+  
